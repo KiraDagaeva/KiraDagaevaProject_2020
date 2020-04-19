@@ -11,7 +11,7 @@
  <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/map.geojson >Вот здесь можно посмотреть на маршрут Транссибирской магистрали.</a>
 На нём отмечены крупные города. Для каждого города дан список особенных блюд. Эти блюда можно попробовать только в указанном регионе.
 
-Учитель должен помнить, что в русском языке тема путешествий включает разную лексику, которую нужно <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/output.txt> собрать в корпус</a> и <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/lemmatext.txt>дополнительно оработать</a> , а затем ещё <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/antconc_results.txt >проверить на частотность</a>
+Учитель должен помнить, что в русском языке тема путешествий включает разную лексику, которую нужно <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/output.txt> собрать в корпус</a> и <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/lemmatext.txt>дополнительно оработать,</a> а затем ещё <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/antconc_results.txt >проверить на частотность.</a>
 <h2>Контакты:</h2>
 Страничка <a href=https://vk.com/green_leo/>vkontakte</a>
 <br/>
