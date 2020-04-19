@@ -17,8 +17,6 @@
 <h2>Контакты:</h2>
 Страничка <a href= "https://vk.com/green_leo"</a>
 <br/>
-<a href=https://github.com/username>GitHub</a>
-<br/>
 Телефон: <b>+79685357749</b>
 <br/>
 E-mail: <i>kiradagaeva@yandex.ru</i>
