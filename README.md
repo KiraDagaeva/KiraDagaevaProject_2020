@@ -9,7 +9,9 @@
 <left><img alt="Это поезд на Транссибе" width="100%" src=https://capost.media/upload/iblock/b4c/b4cfc54f9a29aada1d36b11612ec2e30.jpg></left>
 
 Вот здесь можно посмотреть на маршрут Транссибирской магистрали. На нём отмечены крупные города. Для каждого города дан список особенных блюд. Эти блюда можно попробовать только в указанном регионе.
- <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/map.geojson </a>
+ 
+ <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/map.geojson.io/></a>
+
 <h2>Контакты:</h2>
 Страничка <a href=https://vk.com/green_leo/>vkontakte</a>
 <br/>
