@@ -15,7 +15,7 @@
 
 <br/>
 <h2>Контакты:</h2>
-Страничка <a href=https://vk.com/green_leo</a>
+Страничка <a href= "https://vk.com/green_leo"</a>
 <br/>
 <a href=https://github.com/username>GitHub</a>
 <br/>
