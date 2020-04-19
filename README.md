@@ -1,82 +1,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<title>Convert GeoJSON</title>
-		<script src="http://d3js.org/d3.v3.min.js"></script>
-  		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  		<script src="https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/route.js"></script>
 </head>
 <body>
 <left><h1>Транссибирская магистраль </h1></left>
 
 Это железная дорога. Она проходит через всю Россию от Москвы до Владивостока. Протяжённость дороги: 9288 км. Весь путь занимает шесть дней и 10 минут. Эта дорога проходит через 19 разных регионов. Сегодня мы узнаем о ней подробнее.
 <left><img alt="Это поезд на Транссибе" width="100%" src=https://capost.media/upload/iblock/b4c/b4cfc54f9a29aada1d36b11612ec2e30.jpg></left>
-
-<h1>Convert <a href="http://geojson.org/geojson-spec.html#appendix-a-geometry-examples">GeoJSON-LineString</a> to <a href="http://en.wikipedia.org/wiki/Well-known_text">WKT-LINESTRING</a></h1>
-		<div class='block'>
-			<div>
-				<h1>Input: GeoJSON</h1>
-	    		<textarea id="geojson-input" placeholder="Paste GeoJSON here"></textarea>
-	    		<p class = 'convert' id='convert'>Convert</p>	
-			</div>
-		</div>
-		<div class='block'>
-			<div>
-				<h1>Output: GeoJSON</h1>
-	    		<textarea id="geojson-output" placeholder="Resulting WKT will be displayed here"></textarea>
-	    		<p class = 'convert' id='revert'>Convert</p>	
-			</div>
-	    </div>
-	    
-</body>
-<script>
-	d3.select('#convert').on('mouseup',function(){convert();})
-	d3.select('#revert').on('mouseup',function(){revert();})
-
-  //initialise input of textarea
-  	d3.select('#geojson-input').text(JSON.stringify(LineString, null, 4));
-
-  	
-  function convert(){
-  		console.log('hey')
-	  	//initialize json-textarea-input
-	  	var input = $('#geojson-input').val();
-	  	//get the input as json-object
-	  	var input_json = JSON.parse(input);
-		//console.log(input_json)
-
-//convert the json-input to WKT
-  		var wkt_str = 'LINESTRING(';
-  		input_json.coordinates.forEach(function(p,i){
-  		//	console.log(p)
-  			if(i<input_json.coordinates.length-1)wkt_str =  wkt_str + p[0] + ' ' + p[1] + ', ';
-  			else wkt_str =  wkt_str + p[0] + ' ' + p[1] + ')';
-  		})
-  		//console.log(wkt_str)
-
-  //fill the resulting WKT-Linestring to output textarea
-  		d3.select('#geojson-output').text(wkt_str);
-  	}
-  	function revert(){
-  		console.log('hu')
-  		//initialize wkt-textarea-input
-	  	var input2 = $('#geojson-output').val();
-	  	var input_cache = input2.replace('LINESTRING(','');
-	  	input_cache = input_cache.replace(')','');
-	  	var input_array = input_cache.split(',')
-	var output_json = {"type":"LineString", "coordinates":[]}
-	  	input_array.forEach(function (p,i){
-	  		if(i==0)  var p_cache = p;
-	  		else var p_cache = p.slice(1,p.length);
-	  		var p_array = p_cache.split(' ');
-	  		output_json.coordinates.push([Number(p_array[0]), Number(p_array[1])])
-	  		  	})
-	  	var json_str = JSON.stringify(output_json, null, 4) 
-	  	d3.select('#geojson-input').text(json_str);
-  	}
-
-</script>
+<a href= {"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"LineString","coordinates":[[37.529296875,55.825973254619015],[43.9453125,56.36525013685606],[49.68017578124999,58.69977573144006],[56.27197265624999,58.04300405858762],[60.64453125000001,56.8249328650072],[65.56640625,57.18390185831188],[73.3447265625,54.99022172004893],[82.96875,55.040614327716746],[92.87841796875,56.01066647040695],[104.26025390625,52.308478623663355],[103.5791015625,51.72702815704774],[104.7216796875,51.41291212935532],[107.57812499999999,51.83577752045248],[113.53271484375,52.02545860348814],[124.18945312500001,54.23955053156177],[135.3076171875,48.42920055556841],[131.923828125,43.16512263158296]]}},{"type":"Feature","properties":{"marker-color":"#ff0000","marker-size":"medium","marker-symbol":"circle","Город:":"Москва","Известные блюда:":"","1. Салат \"Оливье\"":"Салат с варёной морковью, с варёной картошкой, с варёным яйцом, с колбасой, с горошком","2. Булочка \"Плюшка\"":"Булочка с сахором.","3. Борщ со сметаной":"Традиционный русский суп со свёклой, картошкой, мясом и, иногда, с фасолью.","4. Уха ":"Традиционный русский суп с рыбой. Его готовят со щукой. Иногда его готовят с водкой."},"geometry":{"type":"Point","coordinates":[37.529296875,55.85064987433714]}},{"type":"Feature","properties":{"marker-color":"#24e21b","marker-size":"medium","marker-symbol":"square-stroked","город: ":"Нижний Новгород","традиционные блюда":"","1. Мордовское блюдо \"Валдо якстере вий\"":"Варёная или свежая свёкла с козьим творогом и с растительным маслом.","2. Цеманат":" Пельмени. Для его приготовления необходимо сделать тесто на воде и начинку из рубленой свинины с обжаренным луком. Для замеса надо использовать ледяную воду. Тесто выстаивается пятнадцать минут, раскатывается, начиняется мясом и сворачивается в кулечки. Отваривать их надо в течение пятнадцати минут в кипящей воде. Подается блюдо с бульоном и рубленой зеленью.","3. Манные блины":"Блины из манной крупы. Подаются с малиновым вареньем.","4. Медовый кисель":"Напиток традиционной мордовской кухни. Его готовят с  мёдом и с крахмалом,  с клюквенным или брусничным соком. "},"geometry":{"type":"Point","coordinates":[44.0771484375,56.43820369358165]}},{"type":"Feature","properties":{"marker-color":"#00ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Киров","традиционные блюда":"","1. Суп \"Щи\"":"Суп с квашеной капустой, с мясом и с луком","2. Суп  \"Губница\"":"Суп с грибами, с картошкой, с луком и со сметаной","3. Запечёный Карп":"Рыба (карп) запечённая в духовке со сметаной и луком.","4. \"Осердница\"":"Тушеная куриная печень с картошкой и с луком.","5. Запечённые яблоки с творогом":"Яблоки с творогом, с яйцами и с сахаром, запечённые в духовке","6. Напиток \"Пахта\"":"Прокисшее молоко, взбиваем в маслобойке."},"geometry":{"type":"Point","coordinates":[49.6142578125,58.66551303038583]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город: ":"Пермь","традиционные блюда:":"","1. \"Хлебное ухо\"":"Пельмени с разными видами местной рыбы, а также с грибами, луком, репой и квашеной капустой.","2. \"Посикунчики\"":" Маленькие жареные пирожки с мясом","3. Пирожки с «пистиками»":"Пирожки с побегами молодого хвоща с измельченным яйцом и солью."},"geometry":{"type":"Point","coordinates":[56.2060546875,58.08949277309781]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Екатеринбург","традиционные блюда:":"","1. Уральские пельмени":"Пельмени с тремя видами мяса, с луком и с солью. Бывают пельмени с ягодами, с квашенной капустой и с редькой","2. Уральские пироги":"Пироги с с картофелем и с маслятами, или с грушей и с сыром, или с грейпфрутом,  или с рыбой (с семгой и  с судаком), или с тушёной свининой.","5. Пирожки с черёмухой":"Пирожки с черёмухой и с сахаром."},"geometry":{"type":"Point","coordinates":[60.55664062499999,56.83695435196053]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Тюмень","традиционные блюда":"","1. \"Томлёная медвежатина\"":"Тушёное мясо медведя с  с картофелем, с луком и со сметаной.","2. \"Мармэн канэк\"":"Солёная икра щуки с брусникой.","3. \"Вонт щай\"":"Чай с лесными травами.","4. \"Баурсаки\"":"Тесто жареное с маслом."},"geometry":{"type":"Point","coordinates":[65.6103515625,57.16007826737998]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Омск","традиционные блюда:":"","1. \"Омичка\"":"Сладкий сыр.","2. \"Сгущёнка\"":"Концентрированное молоко с сахаром.","3. \"Кедровые сладости\"":"Конфеты с кедровыми орехами."},"geometry":{"type":"Point","coordinates":[73.3447265625,55.07836723201515]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Новосибирск","традиционные блюда":"","1. \"Сагудай\"":"Сырая рыба (омуль) с солью, с перцем и с маслом.","2. \"Бухлер\"":"Густой суп с бараниной и с луком.","3. \"Зелёная закуска\"":"Салат с черемшой, с папоротником и с маслом."},"geometry":{"type":"Point","coordinates":[82.9248046875,55.05320258537112]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город: ":"Красноярск","традиционные блюда:":"","1. \"Сибирские пельмени\"":"Пельмени с медвежатиной или лосятиной. В состав добавляют лёд.","2. \"Котлеты по-таймырски\"":"Котлеты с рыбой и черемшой.","3. \"Сибирский салат\"":"Салат с олениной, папоротником и маслом.","4. \"Хунгэл\"":"Суп с сушёной кровью оленя."},"geometry":{"type":"Point","coordinates":[92.87841796875,56.05976947910657]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Иркутск","традиционные блюда:":"","1. Омуль горячего копчения":"Рыба (омуль) копчёная с солью.","2. \"Цюйуван\"":" Жареная лапша с мясом","3. \"Шарбин\"":"Лепешка с бараниной.","4. \"Бухлер\"":"Суп с бараниной, с морковью и с луком."},"geometry":{"type":"Point","coordinates":[104.26025390625,52.308478623663355]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Улан-Удэ","традиционные блюда":"","1. \"Позы\"":"Большие круглые пельмени с бараниной и с луком.","2. \"Смолка\"":"Жвачка со смолой.","3. \"Шулэп\"":"Суп с говядиной, с овощами и с лапшой.","4. \"Айраг\"":"Молоко лошади с мёдом, с сахаром и с изюмом."},"geometry":{"type":"Point","coordinates":[107.57812499999999,51.83577752045248]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Хабаровск","традиционные блюда:":"","1. \"Такса\"":"Паштет с рыбой и с брусникой.","2. \"Бянси\"":"Пельмени с рыбой и с укропом.","3. Уха с крапивой":"Суп с рыбой и с крапивой, с картофелем, с морковкой и с луком..","4. Папоротник с мясом":"Жареная говядина с соленым папоротником и с луком."},"geometry":{"type":"Point","coordinates":[135.32958984375,48.4146186174932]}},{"type":"Feature","properties":{"marker-color":"#80ff00","marker-size":"medium","marker-symbol":"square-stroked","город":"Владивосток","традиционные блюда":"","1. Борщ с морской капустой":"Суп с мясом, с картофелем, со свёклой, с морской капустой.","2. \"Приморский шоколад\"":"Шоколад с морской солью и с водорослями.","3. \"Пян-се\"":"Пирожок, приготовленный на пару, с мясом, луком и черным перцем."},"geometry":{"type":"Point","coordinates":[131.8798828125,43.18114705939968]}}]} </a>
 
 <h2>Контакты:</h2>
 Страничка <a href=https://vk.com/green_leo/>vkontakte</a>
