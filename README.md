@@ -13,7 +13,7 @@
 
 </h1></left>
 
-<left><img alt="Это поезд на Транссибе" width="15%" src=https://capost.media/upload/iblock/b4c/b4cfc54f9a29aada1d36b11612ec2e30.jpg></left>
+<left><img alt="Это поезд на Транссибе" width="100%" src=https://capost.media/upload/iblock/b4c/b4cfc54f9a29aada1d36b11612ec2e30.jpg></left>
 
 <br/>
 <h2>Контакты:</h2>
