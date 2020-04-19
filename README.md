@@ -6,7 +6,7 @@
 		<script src="http://d3js.org/d3.v3.min.js"></script>
   		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-  		<script src="route.js"></script>
+  		<script src="http://github.com/KiraDagaevaProject_2020/route.js"></script>
 </head>
 <body>
 <left><h1>Транссибирская магистраль </h1></left>
