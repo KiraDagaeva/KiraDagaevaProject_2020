@@ -1,3 +1,6 @@
+<html>
+<head></head>
+<body>
 function renderWorked(itemsi) {            
     $('#cases').append('<div class="works block" >   </div>'); // создаём див, в который будет добавляться информация с джсон      
     var containered = $('.block'), html = [], i, item;  // сюда должно добавлять 
@@ -22,3 +25,5 @@ var workItemsed = [  //yadi.sk/d/FvRzbwFH2Nm-qg    {'Wraper': '1','Category': 'D
 
 renderWorked(workItemsed);
 
+</body>
+</html>
