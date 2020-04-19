@@ -13,7 +13,8 @@
 
 Учитель должен помнить, что в русском языке тема путешествий включает разную лексику, которую нужно <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/output.txt> собрать в корпус</a> и <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/lemmatext.txt>дополнительно оработать,</a> а затем ещё <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/antconc_results.txt >проверить на частотность.</a>
 
-Анализ таких словарей показывает интересные вещи. <a href=https://voyant-tools.org/?corpus=09f22fbaf07e49ce34566ea32a52ede5&view=CollocatesGraph&stopList=keywords-02b2fd8c39d47cfb9de669e528eb30b2 >Взаимосвязь между элементами</a>
+Анализ таких словарей показывает интересные вещи. 
+<a href=https://voyant-tools.org/?corpus=09f22fbaf07e49ce34566ea32a52ede5&view=CollocatesGraph&stopList=keywords-02b2fd8c39d47cfb9de669e528eb30b2 > Взаимосвязь между элементами </a>
 <a href= ></a>
 
  </div>
