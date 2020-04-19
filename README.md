@@ -16,7 +16,7 @@
 <br/>
 <h2>Контакты:</h2>
 <br>
-<u>Контакты:</u> <a href=https://vk.com/green_leo </a><br/>
+<u>Контакты:</u> <a href=https://vk.com/green_leo </a href><br/>
 
 <br/>
 Телефон: <b>+79685357749</b>
