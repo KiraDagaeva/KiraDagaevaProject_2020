@@ -10,7 +10,7 @@
 
 Вот здесь можно посмотреть на маршрут Транссибирской магистрали. На нём отмечены крупные города. Для каждого города дан список особенных блюд. Эти блюда можно попробовать только в указанном регионе.
  
- <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/map.geojson > </a>
+ <a href=https://github.com/KiraDagaeva2020/KiraDagaevaProject_2020/blob/master/map.geojson >github</a>
 
 <h2>Контакты:</h2>
 Страничка <a href=https://vk.com/green_leo/>vkontakte</a>
