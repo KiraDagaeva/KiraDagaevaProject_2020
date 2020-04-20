@@ -17,6 +17,7 @@
 <a href="https://voyant-tools.org/?corpus=09f22fbaf07e49ce34566ea32a52ede5&view=CollocatesGraph&stopList=keywords-02b2fd8c39d47cfb9de669e528eb30b2" > Взаимосвязь между элементами </a> или  <a href="https://voyant-tools.org/?corpus=09f22fbaf07e49ce34566ea32a52ede5&stopList=keywords-02b2fd8c39d47cfb9de669e528eb30b2&whiteList=&visible=95&view=Cirrus" > Облако слов, </a>
 <a href="https://voyant-tools.org/?corpus=09f22fbaf07e49ce34566ea32a52ede5&stopList=keywords-02b2fd8c39d47cfb9de669e528eb30b2&docId=8b4c283aacbd595e9a3228393aaea3d2&view=StreamGraph" > графики </a> и многое другое.
 
+<iframe style='width: 413px; height: 282px;' src="https://voyant-tools.org/tool/Cirrus/?stopList=keywords-b01e8a120bd6cdee2401063676a96cd7&whiteList=&corpus=8b438ea01c2595b9727d3ef8d5614e6f"></iframe>
 
 <h2>Контакты:</h2>
 Страничка <a href=https://vk.com/green_leo/>vkontakte</a>
